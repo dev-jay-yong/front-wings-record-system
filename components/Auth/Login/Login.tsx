@@ -122,8 +122,8 @@ const SignUpButton = styled.button`
 
 const Logo = styled.img`
   @media (max-width: 768px) {
-    width: 120px;
-    height: 120px;
+    width: 180px;
+    height: 180px;
   }
 `;
 
@@ -181,8 +181,8 @@ const Login = ({ onSubmit }: LoginSubmitFormProps) => {
   return (
     <SubmitForm onSubmit={handleSubmit}>
       <Container>
-        <div style={{ paddingBottom: '48px' }}>
-          <Logo src='https://i.imgur.com/BAjHmEF.jpeg' width={240} />
+        <div style={{ paddingBottom: '24px' }}>
+          <Logo src='https://i.imgur.com/wvWtFFi.png' width={240} />
         </div>
         <LoginBox>
           <LoginPanel>
