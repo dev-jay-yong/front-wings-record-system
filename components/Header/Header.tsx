@@ -28,10 +28,10 @@ const Header = () => {
     <Container>
       <NavContent href={'/team/men'}>TEAM</NavContent>
       <img
-        src='https://i.imgur.com/BAjHmEF.jpeg'
+        src='https://i.imgur.com/wvWtFFi.png'
         alt={'로고'}
-        width={71}
-        height={70}
+        width={90}
+        height={90}
       />
       <NavContent href={'/stat'}>STATS</NavContent>
     </Container>
