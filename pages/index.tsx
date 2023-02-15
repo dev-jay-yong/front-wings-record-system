@@ -20,7 +20,7 @@ const Home = () => {
   return (
     <>
       <Head>
-        <title>배구 기록 페이지</title>
+        <title>윙즈 경기 기록 사이트</title>
       </Head>
       <Container>
         <Login onSubmit={LoginonSubmit} />
