@@ -26,6 +26,13 @@ export type TeamTotalRecordType = {
   total_lose_count: number;
 };
 
+export type TeamInfoType = {
+  affiliation: string;
+  hometown: string;
+  chairman: string;
+  captain: string;
+};
+
 export interface TeamIntroductionType {
   id: number;
   name: string;
@@ -33,6 +40,7 @@ export interface TeamIntroductionType {
   gender: boolean;
   created_at: string;
   coach: string;
+  info?: TeamInfoType;
   performance: PerformanceType[];
   team_total_record?: TeamTotalRecordType;
 }

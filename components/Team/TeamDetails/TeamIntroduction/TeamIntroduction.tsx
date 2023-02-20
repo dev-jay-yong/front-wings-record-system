@@ -17,6 +17,7 @@ const TeamWrapper = styled.div`
   border-radius: 3px;
   border: 1px solid #e0e0e0;
   gap: 50px;
+  padding-bottom: 10px;
 
   @media (max-width: 768px) {
     height: 230px;
@@ -51,13 +52,17 @@ const TeamTitle = styled.div`
     font-size: 20px;
   }
 `;
-const TeamCoach = styled.div`
+const TeamAdminWrapper = styled.div`
   font-size: 14px;
   font-weight: bold;
   color: #767676;
   @media (max-width: 768px) {
     font-size: 12px;
   }
+`;
+
+const TeamAdmin = styled.div`
+  margin: 2px;
 `;
 
 const TeamSubTitle = styled.div`
@@ -128,9 +133,24 @@ export const TeamIntroduction = ({ team }: TeamIntroductionProps) => {
         <Logo src={team && team.team_logo} alt={'로고'} />
         <TeamTitleWrapper>
           <TeamTitle>{team && team.name}</TeamTitle>
-          <TeamCoach>
-            <span style={{ color: '#253032' }}>코치</span> :{team && team.coach}
-          </TeamCoach>
+          <TeamAdminWrapper>
+            <TeamAdmin>
+              <span style={{ color: '#253032' }}>코치</span> :{' '}
+              {team && team.coach}
+            </TeamAdmin>
+            <TeamAdmin>
+              <span style={{ color: '#253032' }}>협회</span> :{' '}
+              {team && team.info?.affiliation}
+            </TeamAdmin>
+            <TeamAdmin>
+              <span style={{ color: '#253032' }}>홈구장</span> :{' '}
+              {team && team.info?.hometown}
+            </TeamAdmin>
+            <TeamAdmin>
+              <span style={{ color: '#253032' }}>주장</span> :{' '}
+              {team && team.info?.captain}
+            </TeamAdmin>
+          </TeamAdminWrapper>
         </TeamTitleWrapper>
       </TeamWrapper>
       <TeamSubTitle>역대 성적</TeamSubTitle>
