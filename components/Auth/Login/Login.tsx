@@ -204,10 +204,10 @@ const Login = ({ onSubmit }: LoginSubmitFormProps) => {
             <SubmitButton>로그인</SubmitButton>
           </LoginPanel>
         </LoginBox>
-        <SignUpWrapper>
-          <SignUpButton>비밀번호 찾기</SignUpButton>
-          <SignUpButton>회원가입</SignUpButton>
-        </SignUpWrapper>
+        {/*<SignUpWrapper>*/}
+        {/*  <SignUpButton>비밀번호 찾기</SignUpButton>*/}
+        {/*  <SignUpButton>회원가입</SignUpButton>*/}
+        {/*</SignUpWrapper>*/}
       </Container>
     </SubmitForm>
   );
