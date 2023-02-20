@@ -172,7 +172,7 @@ const Login = ({ onSubmit }: LoginSubmitFormProps) => {
         if (err.response.data.status_code === 401) {
           alert(err.response.data.message);
         } else if (err.response.data.status_code === 500) {
-          alert('가입되지 않은 아이디입니다');
+          alert('서버에 일시적인 오류가 있습니다.');
         }
       });
   };
