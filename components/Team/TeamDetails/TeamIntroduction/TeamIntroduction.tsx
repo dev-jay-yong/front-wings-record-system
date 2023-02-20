@@ -169,7 +169,7 @@ export const TeamIntroduction = ({ team }: TeamIntroductionProps) => {
             {team &&
               team.performance.map((data, idx) => (
                 <tr key={idx}>
-                  <td>{data.id}</td>
+                  <td>{idx + 1}</td>
                   <td>{data.competition_name}</td>
                   <td>{data.results}</td>
                   <td>
