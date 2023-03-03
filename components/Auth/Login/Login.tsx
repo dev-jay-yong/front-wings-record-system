@@ -96,29 +96,29 @@ export const SubmitForm = styled.form`
   align-items: center;
 `;
 
-const SignUpWrapper = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-
-  @media (max-width: 768px) {
-    width: 80%;
-  }
-`;
-
-const SignUpButton = styled.button`
-  font-size: 16px;
-  margin-top: 20px;
-  align-items: center;
-  border: none;
-  outline: none;
-  background: none;
-
-  @media (max-width: 768px) {
-    margin-top: 15px;
-    font-size: 12px;
-  }
-`;
+// const SignUpWrapper = styled.div`
+//   display: flex;
+//   flex-direction: row;
+//   justify-content: space-between;
+//
+//   @media (max-width: 768px) {
+//     width: 80%;
+//   }
+// `;
+//
+// const SignUpButton = styled.button`
+//   font-size: 16px;
+//   margin-top: 20px;
+//   align-items: center;
+//   border: none;
+//   outline: none;
+//   background: none;
+//
+//   @media (max-width: 768px) {
+//     margin-top: 15px;
+//     font-size: 12px;
+//   }
+// `;
 
 const Logo = styled.img`
   @media (max-width: 768px) {
