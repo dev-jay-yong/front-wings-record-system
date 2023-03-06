@@ -27,7 +27,9 @@ export const PlayerStat = styled.div`
     }
 
     dt {
-      line-height: 61px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       font-weight: 700;
       height: 62px;
       font-size: 14px;
