@@ -5,6 +5,7 @@ import React, { useEffect, useState } from 'react';
 import { PhotoSwiper } from './PhotoSwiper/PhotoSwiper';
 import { PlayerJob } from './PlayerJob/PlayerJob';
 import { RecordTabs } from './RecordTabs/RecordTabs';
+import { SetRecordTabs } from './SetRecordTabs/SetRecordTabs';
 
 interface PlayerDetailProps {
   team_id: string | string[] | undefined;
@@ -291,6 +292,25 @@ export type DetailRecordType = {
   match_count: number;
 };
 
+export type SetRecordType = {
+  set_name: string;
+  attack: number;
+  attack_success: number;
+  attack_success_ratio: number;
+  serve: number;
+  serve_success: number;
+  serve_success_ratio: number;
+  block: number;
+  block_success: number;
+  block_success_ratio: number;
+  receive: number;
+  receive_success: number;
+  receive_success_ratio: number;
+  dig: number;
+  dig_success: number;
+  dig_success_ratio: number;
+};
+
 type UserType = {
   id: number;
   name: string;
@@ -319,6 +339,7 @@ export type JobType = {
 interface PlayerData {
   user: UserType;
   detail_record: DetailRecordType;
+  set_record: SetRecordType[];
   player_record: PlayerRecordType;
   photo_gallery_urls: PhotoGalleryType[];
   job: JobType;
@@ -410,6 +431,8 @@ const PlayerDetails = ({ team_id, player_id }: PlayerDetailProps) => {
           </TableBody>
         </RecordTable>
       </ProfileBox>
+      <RecordTitle>개인 세트별 기록 (2023년)</RecordTitle>
+      <SetRecordTabs data={playerData?.set_record} />
       <RecordTitle>기록 상세 (연도)</RecordTitle>
       <RecordBox>
         <RecordTabs data={playerData?.detail_record} />
