@@ -6,6 +6,7 @@ import { RecordTabBlock } from './RecordTabBlock/RecordTabBlock';
 import { RecordTabDig } from './RecordTabDig/RecordTabDig';
 import { RecordTabReceive } from './RecordTabReceive/RecordTabReceive';
 import { RecordTabServe } from './RecordTabServe/RecordTabServe';
+import { RecordTabSetup } from 'components/Team/TeamDetails/TeamPlayers/PlayerDetails/RecordTabs/RecordTabSetup/RecordTabSetup';
 
 const AttackTypeWrapper = styled.div`
   display: flex;
@@ -94,10 +95,10 @@ const ChartWrapper = styled.div`
   display: flex;
   width: 100%;
   height: 100%;
+  overflow-y: auto;
 
   @media (max-width: 600px) {
     flex-direction: column;
-    overflow-y: auto;
   }
 `;
 interface RecordTabProps {
@@ -114,6 +115,7 @@ export const RecordTabs = ({ data }: RecordTabProps) => {
     },
     { name: '블로킹', content: <RecordTabBlock data={data?.block} /> },
     { name: '서브', content: <RecordTabServe data={data?.serve} /> },
+    { name: '셋업', content: <RecordTabSetup data={data?.setup} /> },
     {
       name: '서브 리시브',
       content: <RecordTabReceive data={data?.serve_receive} />,

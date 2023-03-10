@@ -217,6 +217,21 @@ export type AttackType = {
   possession: number;
 };
 
+export type SetupType = {
+  left_setup_success: number;
+  left_setup_fail: number;
+  right_setup_success: number;
+  right_setup_fail: number;
+  center_setup_success: number;
+  center_setup_fail: number;
+  a_quick_setup_success: number;
+  a_quick_setup_fail: number;
+  setup_success: number;
+  setup_fail: number;
+  accuracy: number;
+  possession: number;
+};
+
 export type ServeType = {
   serve_success: number;
   serve_miss: number;
@@ -288,6 +303,7 @@ export type DetailRecordType = {
   block: BlockType;
   dig: DigType;
   serve_receive: ReceiveType;
+  setup: SetupType;
   set_count: number;
   match_count: number;
 };
