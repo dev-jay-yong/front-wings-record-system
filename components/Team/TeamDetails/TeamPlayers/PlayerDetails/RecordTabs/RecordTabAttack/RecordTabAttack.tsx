@@ -148,7 +148,7 @@ export const RecordTabAttack = ({ data }: RecordDataProps) => {
               },
             }}
           />
-          <div>공격 점유율</div>
+          <div>공격 득점 점유율</div>
         </TextBox>
       </Box>
       <PlayerStat>
@@ -157,7 +157,7 @@ export const RecordTabAttack = ({ data }: RecordDataProps) => {
           <dd>{data?.attack}</dd>
         </dl>
         <dl>
-          <dt>공격 성공</dt>
+          <dt>공격 득점</dt>
           <dd>{data?.attack_success}</dd>
         </dl>
         <dl>
@@ -173,7 +173,7 @@ export const RecordTabAttack = ({ data }: RecordDataProps) => {
           <dd>{data?.accuracy}%</dd>
         </dl>
         <dl>
-          <dt>득점 점유율</dt>
+          <dt>공격 득점 점유율</dt>
           <dd>{data?.possession}%</dd>
         </dl>
       </PlayerStat>

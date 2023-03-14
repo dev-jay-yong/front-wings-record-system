@@ -61,12 +61,12 @@ export const RecordTabBlock = ({ data }: RecordDataProps) => {
               },
             }}
           />
-          <div>블로킹 점유율</div>
+          <div>블로킹 득점 점유율</div>
         </TextBox>
       </Box>
       <PlayerStat>
         <dl>
-          <dt>블로킹 성공</dt>
+          <dt>블로킹 득점</dt>
           <dd>{data?.block_success}</dd>
         </dl>
         <dl>
@@ -82,7 +82,7 @@ export const RecordTabBlock = ({ data }: RecordDataProps) => {
           <dd>{data?.block_miss}</dd>
         </dl>
         <dl>
-          <dt>블로킹 성공 점유율</dt>
+          <dt>블로킹 득점 점유율</dt>
           <dd>{data?.possession}%</dd>
         </dl>
       </PlayerStat>

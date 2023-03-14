@@ -61,7 +61,7 @@ export const RecordTabServe = ({ data }: RecordDataProps) => {
               },
             }}
           />
-          <div>서브 점유율</div>
+          <div>서브 에이스 점유율</div>
         </TextBox>
       </Box>
       <PlayerStat>
@@ -70,7 +70,7 @@ export const RecordTabServe = ({ data }: RecordDataProps) => {
           <dd>{data?.serve_count}</dd>
         </dl>
         <dl>
-          <dt>서브 성공</dt>
+          <dt>서브 에이스</dt>
           <dd>{data?.serve_success}</dd>
         </dl>
         <dl>
@@ -78,7 +78,7 @@ export const RecordTabServe = ({ data }: RecordDataProps) => {
           <dd>{data?.serve_miss}</dd>
         </dl>
         <dl>
-          <dt>서브 득점 점유율</dt>
+          <dt>서브 에이스 점유율</dt>
           <dd>{data?.possession}%</dd>
         </dl>
       </PlayerStat>
