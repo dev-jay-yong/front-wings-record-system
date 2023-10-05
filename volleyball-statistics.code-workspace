@@ -1,0 +1,42 @@
+{
+  "folders": [
+    {
+      "name": "Root Directory",
+      "path": "."
+    },
+    {
+      "name": "volleyball",
+      "path": "apps/volleyball"
+    },
+    {
+      "name": "volleyball-archive",
+      "path": "apps/volleyball-archive"
+    },
+    {
+      "name": "volleyball-storybook",
+      "path": "apps/docs"
+    }
+  ],
+  "settings": {
+    "files.exclude": {
+      "**/.git": true,
+      "**/.svn": true,
+      "**/.hg": true,
+      "**/CVS": true,
+      "**/.DS_Store": true,
+      "**/Thumbs.db": true,
+      "**/.next": true,
+      "**/packages/*/*": true,
+      "**/apps/*/*": true,
+      "**/out": true
+    },
+    "search.exclude": {
+      "**/node_modules": true,
+      "**/bower_components": true,
+      "**/*.code-search": true,
+      "**/pnpm-lock.yaml": true,
+      "**/out": true,
+      "**/.pnp.*": true
+    }
+  }
+}
